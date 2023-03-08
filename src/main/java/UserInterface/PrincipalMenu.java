@@ -1,57 +1,64 @@
 package UserInterface;
 
 
-import views.tempView;
-import views.welcomeView;
+import views.CurrencyView;
+import views.TempView;
+import views.WelcomeView;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 
 public class PrincipalMenu extends JFrame {
 
     private JPanel backgoundMain;
     private JPanel menuBanner;
     private JPanel content;
-
-    private final ImageIcon tempLeftBannerExtraction = new ImageIcon("/interfaceimages/thermometer.png");
     private JLabel aluraLabel;
     private JButton temperaturaButton;
-    private JButton lengthButton;
+    private JButton currencyButton;
+    private JButton backButton;
     private JPanel imgContent;
-    welcomeView pView = new welcomeView(); //first panel view
-    tempView tView = new tempView();
+
+    WelcomeView pView = new WelcomeView(); //first panel view
+    TempView tView = new TempView();
+    CurrencyView cView = new CurrencyView();
+
 
 
 
 
     public PrincipalMenu() throws HeadlessException {
 
-        changeContent(pView.getWelcomeContent());
-        changeContentImg(pView.getWelcomeImg());
+        changeContent(pView.getWelcomePanel());
+        changeContentImg(pView.getWelcomeImgPanel());
 
         temperaturaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                changeContent(tView.getTempContent());
-                changeContentImg(tView.getTempImg());
+                changeContent(tView.getTempPanel());
+                changeContentImg(tView.getTempImgPanel());
 
             }
         });
 
-
-        lengthButton.addActionListener(new ActionListener() {
+        currencyButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                changeContent(pView.getWelcomeContent());
-                changeContentImg(pView.getWelcomeImg());
+                changeContent(cView.getCurrencyPanel());
+                changeContentImg(cView.getCurrencyImgPanel());
             }
         });
 
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                changeContent(pView.getWelcomePanel());
+                changeContentImg(pView.getWelcomeImgPanel());
+            }
+        });
     }
 
     public void changeContent(JPanel panel){
