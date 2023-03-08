@@ -2,14 +2,13 @@ import UserInterface.PrincipalMenu;
 import com.formdev.flatlaf.intellijthemes.FlatDarkFlatIJTheme;
 
 import javax.swing.*;
+import java.awt.*;
 
 
 public class Main {
 
 
     public static void main(String[] args) {
-       //FlatLightLaf.setup();
-
         try {
             UIManager.setLookAndFeel( new FlatDarkFlatIJTheme() );
         } catch( Exception ex ) {
@@ -23,12 +22,15 @@ public class Main {
         pm.setSize(600, 435);
         pm.setResizable(false);
         pm.setVisible(true);
-
+        centreWindow(pm);
 
         pm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-
-
-
+    }
+    public static void centreWindow(Window frame) {
+        Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = (int) ((dimension.getWidth() - frame.getWidth()) / 2);
+        int y = (int) ((dimension.getHeight() - frame.getHeight()) / 2);
+        frame.setLocation(x, y);
     }
 }
