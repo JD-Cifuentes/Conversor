@@ -84,9 +84,9 @@
               <foreground color="-1"/>
             </properties>
           </component>
-          <component id="c63a2" class="javax.swing.JTextField" binding="inTempValue">
+          <component id="a14e3" class="javax.swing.JTextField" binding="inTempValue">
             <constraints>
-              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <horizontalAlignment value="0"/>

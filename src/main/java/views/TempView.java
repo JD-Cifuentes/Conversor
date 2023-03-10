@@ -1,9 +1,24 @@
 package views;
 
+import Utilities.ComboBoxKeyValue;
+import Utilities.ConversionAction;
+import Utilities.DoubleOnlyKeyListener;
+import Utilities.InitPlaceHoldersAndFocusListeners;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import javax.swing.*;
+import javax.swing.text.MaskFormatter;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+
 
 public class TempView {
     private JPanel tempBG;
@@ -20,26 +35,29 @@ public class TempView {
     private JPanel tempImgPanel;
 
     public TempView() {
-        initPlaceHolders();
+        initComboBoxes();
+        inTempValue.addFocusListener(new InitPlaceHoldersAndFocusListeners(inTempValue, outTempValue));
+        inTempValue.addKeyListener(new DoubleOnlyKeyListener(inTempValue, "AdmitAllRealNum"));
+        tempConvertBttn.addActionListener(new ConversionAction(inTempValue, outTempValue));
+
     }
 
-    public void initPlaceHolders(){
-        this.outTempValue.setForeground(Color.lightGray);
-        this.outTempValue.setText("Resultado");
-        this.outTempValue.setFont(new Font("Roboto Light",100,12));
-        this.inTempValue.setText("Agregar valor");
-        inTempValue.addFocusListener(new FocusListener() {
-            public void focusGained(FocusEvent e) {
-                if (inTempValue.getText().equals("Agregar valor")) {
-                    inTempValue.setText("");
-                }
+
+    public void initComboBoxes(){
+        File tempUnits = new File("src/main/resources/DataFormat/TempFormat.json");
+
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        try {
+            java.util.List<ComboBoxKeyValue> jsonTempMap = objectMapper.readValue(tempUnits, new TypeReference<List<ComboBoxKeyValue>>(){});
+            for (ComboBoxKeyValue entry : jsonTempMap) {
+                inTempBox.addItem(entry);
+                outTempBox.addItem(entry);
             }
-            public void focusLost(FocusEvent e) {
-                if (inTempValue.getText().isEmpty()) {
-                    inTempValue.setText("Agregar valor");
-                }
-            }
-        });
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
@@ -51,4 +69,5 @@ public class TempView {
     public JPanel getTempImgPanel() {
         return tempImgPanel;
     }
+
 }

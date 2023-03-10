@@ -1,3 +1,5 @@
+package Conversors;
+
 import java.util.*;
 public class TempConversor {
     static Scanner sc = new Scanner(System.in); // Scanner Class

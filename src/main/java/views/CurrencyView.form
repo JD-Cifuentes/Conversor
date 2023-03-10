@@ -34,7 +34,7 @@
             </constraints>
             <properties>
               <foreground color="-1"/>
-              <labelFor value="ec22c"/>
+              <labelFor value="37069"/>
               <text value="Hacia:"/>
             </properties>
           </component>
@@ -54,7 +54,7 @@
               <foreground color="-1"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <labelFor value="f0464"/>
+              <labelFor value="bc0f8"/>
               <opaque value="true"/>
               <text value=""/>
             </properties>
@@ -108,7 +108,7 @@
               <foreground color="-1"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <labelFor value="dc61d"/>
+              <labelFor value="3eb46"/>
               <text value="De:"/>
             </properties>
           </component>
