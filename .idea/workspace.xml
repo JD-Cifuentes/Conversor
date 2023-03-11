@@ -6,21 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f2ee1081-ff85-4b7d-a8a3-987b17ff61a1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CurrencyConversorRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Conversors/CurrencyConversorRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TempConversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Conversors/TempConversor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/InitComboBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/InitComboBoxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/currenciesformat/OnlyNames.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/views/CurrencyView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/CurrencyView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/views/CurrencyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/CurrencyView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/views/TempView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/TempView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/views/TempView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/TempView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CurrencyConversorRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TempConversor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/DataFormat/CurrenciesFormat.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DataFormat/CurrenciesFormat.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/views/CurrencyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/CurrencyView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/tempView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/tempView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/tempView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/tempView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -63,6 +55,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Utilities" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\juan-\OneDrive\ONE\Segunda etapa java\Challenge #2 conversor\src\main\java\views" />
       <recent name="C:\Users\juan-\OneDrive\ONE\Segunda etapa java\Challenge #2 conversor\src" />

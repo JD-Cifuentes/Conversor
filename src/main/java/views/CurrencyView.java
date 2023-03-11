@@ -1,5 +1,7 @@
 package views;
 
+import Utilities.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.FocusEvent;
@@ -21,10 +23,16 @@ public class CurrencyView {
 
 
     public CurrencyView() {
-        initPlaceHolders();
+
+        new InitComboBoxes(inCurrencyBox, outCurrencyBox, PathsToDataFormats.CURRENCIES);
+        inCurrencyValue.addFocusListener(new InitPlaceHoldersAndFocusListeners(inCurrencyValue, outCurrencyValue));
+        inCurrencyValue.addKeyListener(new DoubleOnlyKeyListener(inCurrencyValue));
+        currencyConvertBttn.addActionListener(new ConversionAction(inCurrencyValue, outCurrencyValue));
+        //initPlaceHolders();
     }
 
-    public void initPlaceHolders(){
+/*    public void initPlaceHolders(){
+
         this.outCurrencyValue.setForeground(Color.lightGray);
         this.outCurrencyValue.setText("Resultado");
         this.outCurrencyValue.setFont(new Font("Roboto Light",100,12));
@@ -44,7 +52,7 @@ public class CurrencyView {
 
 
 
-    }
+    }*/
 
 
     public JPanel getCurrencyPanel() {

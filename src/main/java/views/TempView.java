@@ -1,24 +1,7 @@
 package views;
 
-import Utilities.ComboBoxKeyValue;
-import Utilities.ConversionAction;
-import Utilities.DoubleOnlyKeyListener;
-import Utilities.InitPlaceHoldersAndFocusListeners;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
+import Utilities.*;
 import javax.swing.*;
-import javax.swing.text.MaskFormatter;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-import java.util.Map;
-
 
 public class TempView {
     private JPanel tempBG;
@@ -35,32 +18,11 @@ public class TempView {
     private JPanel tempImgPanel;
 
     public TempView() {
-        initComboBoxes();
+        new InitComboBoxes(inTempBox, outTempBox, PathsToDataFormats.TEMP);
         inTempValue.addFocusListener(new InitPlaceHoldersAndFocusListeners(inTempValue, outTempValue));
         inTempValue.addKeyListener(new DoubleOnlyKeyListener(inTempValue, "AdmitAllRealNum"));
         tempConvertBttn.addActionListener(new ConversionAction(inTempValue, outTempValue));
-
     }
-
-
-    public void initComboBoxes(){
-        File tempUnits = new File("src/main/resources/DataFormat/TempFormat.json");
-
-        ObjectMapper objectMapper = new ObjectMapper();
-
-        try {
-            java.util.List<ComboBoxKeyValue> jsonTempMap = objectMapper.readValue(tempUnits, new TypeReference<List<ComboBoxKeyValue>>(){});
-            for (ComboBoxKeyValue entry : jsonTempMap) {
-                inTempBox.addItem(entry);
-                outTempBox.addItem(entry);
-            }
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-    }
-
 
     public JPanel getTempPanel() {
         return tempPanel;
