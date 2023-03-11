@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.swing.*;
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -26,12 +27,11 @@ public class InitComboBoxes {
         File filePath = new File(PATH.getPath());
 
         try {
-            java.util.List<ComboBoxKeyValue> jsonTempMap = objectMapper.readValue(filePath, new TypeReference<List<ComboBoxKeyValue>>(){});
+            List<ComboBoxKeyValue> jsonTempMap = objectMapper.readValue(filePath, new TypeReference<List<ComboBoxKeyValue>>(){});
             for (ComboBoxKeyValue entry : jsonTempMap) {
                 inBox.addItem(entry);
                 outBox.addItem(entry);
             }
-
         } catch (
                 IOException e) {
             throw new RuntimeException(e);

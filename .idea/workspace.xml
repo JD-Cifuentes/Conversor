@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f2ee1081-ff85-4b7d-a8a3-987b17ff61a1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface/PrincipalMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface/PrincipalMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/InitComboBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/InitComboBoxes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/views/CurrencyView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/CurrencyView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/views/CurrencyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/CurrencyView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/views/TempView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/TempView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DataFormat/CurrenciesFormat.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DataFormat/CurrenciesFormat.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/views/CurrencyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/CurrencyView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,23 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE&quot;: &quot;right&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;1&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE&quot;: &quot;left&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;384&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/juan-/OneDrive/ONE/Segunda etapa java/Challenge #2 conversor&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE": "right",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "1",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "214",
+    "last_opened_file_path": "C:/Users/juan-/OneDrive/ONE/Segunda etapa java/Challenge #2 conversor",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Utilities" />

@@ -26,9 +26,6 @@ public class PrincipalMenu extends JFrame {
     CurrencyView cView = new CurrencyView();
 
 
-
-
-
     public PrincipalMenu() throws HeadlessException {
 
         changeContent(pView.getWelcomePanel());
@@ -64,6 +61,7 @@ public class PrincipalMenu extends JFrame {
     public void changeContent(JPanel panel){
 
         panel.setSize(250,400);
+        panel.setMaximumSize(new Dimension(250,400)); // desbordamiento con currency view
         panel.setLocation(0,0);
 
         this.content.removeAll();
