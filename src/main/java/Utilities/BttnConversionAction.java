@@ -4,12 +4,12 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ConversionAction implements ActionListener {
+public class BttnConversionAction implements ActionListener {
 
     private JTextField inValue;
     private JLabel outValue;
 
-    public ConversionAction(JTextField inValue, JLabel outValue) {
+    public BttnConversionAction(JTextField inValue, JLabel outValue) {
         this.inValue = inValue;
         this.outValue = outValue;
     }

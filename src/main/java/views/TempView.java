@@ -21,7 +21,7 @@ public class TempView {
         new InitComboBoxes(inTempBox, outTempBox, PathsToDataFormats.TEMP);
         inTempValue.addFocusListener(new InitPlaceHoldersAndFocusListeners(inTempValue, outTempValue));
         inTempValue.addKeyListener(new DoubleOnlyKeyListener(inTempValue, "AdmitAllRealNum"));
-        tempConvertBttn.addActionListener(new ConversionAction(inTempValue, outTempValue));
+        tempConvertBttn.addActionListener(new BttnConversionAction(inTempValue, outTempValue));
     }
 
     public JPanel getTempPanel() {

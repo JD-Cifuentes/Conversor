@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2ee1081-ff85-4b7d-a8a3-987b17ff61a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface/PrincipalMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface/PrincipalMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/InitComboBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/InitComboBoxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/views/CurrencyView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/CurrencyView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ConversionAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BttnConversionAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/views/CurrencyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/CurrencyView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserInterface/PrincipalMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/CurrencyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/CurrencyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/TempView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/TempView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +42,7 @@
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE": "right",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "1",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "214",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "179",
     "last_opened_file_path": "C:/Users/juan-/OneDrive/ONE/Segunda etapa java/Challenge #2 conversor",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",

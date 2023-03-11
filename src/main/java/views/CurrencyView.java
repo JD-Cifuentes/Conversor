@@ -3,9 +3,6 @@ package views;
 import Utilities.*;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
 
 public class CurrencyView {
     private JPanel currencyPanel;
@@ -29,7 +26,7 @@ public class CurrencyView {
         new InitComboBoxes(inCurrencyBox, outCurrencyBox, PathsToDataFormats.CURRENCIES);
         inCurrencyValue.addFocusListener(new InitPlaceHoldersAndFocusListeners(inCurrencyValue, outCurrencyValue));
         inCurrencyValue.addKeyListener(new DoubleOnlyKeyListener(inCurrencyValue));
-        currencyConvertBttn.addActionListener(new ConversionAction(inCurrencyValue, outCurrencyValue));
+        currencyConvertBttn.addActionListener(new BttnConversionAction(inCurrencyValue, outCurrencyValue));
 
     }
 
