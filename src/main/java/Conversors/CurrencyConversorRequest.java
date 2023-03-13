@@ -10,31 +10,32 @@ import java.net.URL;
 import java.util.Map;
 public class CurrencyConversorRequest  {
     // create a URL object with the URL you want to request
-    String apiKey = "p9kpyvmXswKAmaBGQNAzf1zkAXwnWLrks7VHXXUU";
-    String base_currency = "USD";
-    String currencies = "COP";
-    String value = "100";
+    private final String apiKey = "p9kpyvmXswKAmaBGQNAzf1zkAXwnWLrks7VHXXUU";
+    private String baseCurrency;
+    private String toCurrency;
+    private String value;
 
-    public void request() throws IOException {
+    public CurrencyConversorRequest(String baseCurrency, String toCurrency, String value) throws IOException {
+        this.baseCurrency = baseCurrency;
+        this.toCurrency = toCurrency;
+        this.value = value;
+    }
+
+    public Double request() throws IOException {
+
         String urlString = String.format("https://api.currencyapi.com/v3/latest?apikey=%s&value=%s&base_currency=%s&currencies=%s",
-                apiKey, value, base_currency, currencies);
+                this.apiKey, value, baseCurrency, toCurrency);
         URL url = new URL(urlString);
 
-        // create an HttpURLConnection object
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
-// set the request method to GET
         con.setRequestMethod("GET");
 
-
-        // get the response code
         int responseCode = con.getResponseCode();
 
-        // get the value of a specific header field
         String limitQuotaMinute = con.getHeaderField("X-RateLimit-Limit-Quota-Minute");
         String limitQuotaMonth = con.getHeaderField("X-RateLimit-Remaining-Quota-Month");
 
-        // read the response body as a string
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String inputLine;
         StringBuilder response = new StringBuilder();
@@ -42,21 +43,15 @@ public class CurrencyConversorRequest  {
             response.append(inputLine);
         }
 
-
-
         in.close();
-        // close the HttpURLConnection object
+
         con.disconnect();
 
-        // deserialize the response JSON into a Java object using Jackson
         ObjectMapper objectMapper = new ObjectMapper();
         Map<String, Object> jsonMap = objectMapper.readValue(response.toString(), Map.class);
-
         Map<String, Object> data = (Map<String, Object>) jsonMap.get("data");
-
-        Map<String, Object> currency = (Map<String, Object>) data.get("COP");
-
-        Double result = (Double) currency.get("value");
+        Map<String, Object> currency = (Map<String, Object>) data.get(toCurrency);
+        double result = (double) currency.get("value");
 
 
 
@@ -65,8 +60,7 @@ public class CurrencyConversorRequest  {
         System.out.println("minute limit :" + limitQuotaMinute);
         System.out.println("month limit :" + limitQuotaMonth);
 
+        return result * Double.parseDouble(value);
+
     }
-
-
-
 }

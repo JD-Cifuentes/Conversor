@@ -1,10 +1,12 @@
 package Utilities;
 
+import Conversors.CurrencyConversorRequest;
 import Conversors.TempConversor;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -77,7 +79,13 @@ public class BttnConversionAction implements ActionListener {
 
     public void toCurrConversion(){
 
+        try {
+            CurrencyConversorRequest currOut = new CurrencyConversorRequest(inBoxOption.getSimbol(), outBoxOption.getSimbol(), inValue.getText());
+            outValue.setText(String.format("%.2f", currOut.request()) + " " + outBoxOption.getSimbol());
 
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
     
 }
