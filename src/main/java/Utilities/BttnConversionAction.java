@@ -81,8 +81,12 @@ public class BttnConversionAction implements ActionListener {
 
         try {
             CurrencyConversorRequest currOut = new CurrencyConversorRequest(inBoxOption.getSimbol(), outBoxOption.getSimbol(), inValue.getText());
-            outValue.setText(String.format("%.2f", currOut.request()) + " " + outBoxOption.getSimbol());
-
+            outValue.setText(String.format("%.2f", currOut.getResult()) + " " + outBoxOption.getSimbol());
+            if (currOut.getApiStatus() != "Ejecución exitosa"){
+                JOptionPane.showMessageDialog(null,currOut.getApiStatus(),"Oops ocurrió algo inesperado",JOptionPane.ERROR_MESSAGE);
+            }else{
+                JOptionPane.showMessageDialog(null,"consultas que puedes hacer por minuto: " + currOut.getMinLimit() + ". Consultas disponibles de este mes:" + currOut.getMonthLimit(),"Consultas restantes",JOptionPane.INFORMATION_MESSAGE);
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

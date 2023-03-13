@@ -14,14 +14,21 @@ public class CurrencyConversorRequest  {
     private String baseCurrency;
     private String toCurrency;
     private String value;
+    private String monthLimit;
+    private String minLimit;
+    private double result;
+    private String apiStatus;
 
     public CurrencyConversorRequest(String baseCurrency, String toCurrency, String value) throws IOException {
         this.baseCurrency = baseCurrency;
         this.toCurrency = toCurrency;
         this.value = value;
+
+        request();
+
     }
 
-    public Double request() throws IOException {
+    public void request() throws IOException {
 
         String urlString = String.format("https://api.currencyapi.com/v3/latest?apikey=%s&value=%s&base_currency=%s&currencies=%s",
                 this.apiKey, value, baseCurrency, toCurrency);
@@ -31,36 +38,50 @@ public class CurrencyConversorRequest  {
 
         con.setRequestMethod("GET");
 
-        int responseCode = con.getResponseCode();
+        int statusCode = con.getResponseCode();
+        this.minLimit = con.getHeaderField("X-RateLimit-Limit-Quota-Minute");
+        this.monthLimit = con.getHeaderField("X-RateLimit-Remaining-Quota-Month");
 
-        String limitQuotaMinute = con.getHeaderField("X-RateLimit-Limit-Quota-Minute");
-        String limitQuotaMonth = con.getHeaderField("X-RateLimit-Remaining-Quota-Month");
+        if(statusCode == 200){
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuilder response = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+            in.close();
+            con.disconnect();
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuilder response = new StringBuilder();
-        while ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
+            ObjectMapper objectMapper = new ObjectMapper();
+            Map<String, Object> jsonMap = objectMapper.readValue(response.toString(), Map.class);
+            Map<String, Object> data = (Map<String, Object>) jsonMap.get("data");
+            Map<String, Object> currency = (Map<String, Object>) data.get(toCurrency);
+            this.apiStatus = "Ejecución exitosa";
+            this.result = (double) currency.get("value") * Double.parseDouble(value);
+        }else if(statusCode == 429){
+            this.apiStatus = "Se ha alcanzado el límite de consultas mensual para el plan gratuito. Contactanos si quieres pasar a premium.";
+            this.result = 0.0;
+        }else{
+            this.apiStatus = "Oops lo sentimos, al parecer tenemos algunos inconvenientes. Intenta nuevamente o ponte en contacto con nosotros si el problema persiste.";
+            this.result = 0.0;
         }
 
-        in.close();
 
-        con.disconnect();
+    }
 
-        ObjectMapper objectMapper = new ObjectMapper();
-        Map<String, Object> jsonMap = objectMapper.readValue(response.toString(), Map.class);
-        Map<String, Object> data = (Map<String, Object>) jsonMap.get("data");
-        Map<String, Object> currency = (Map<String, Object>) data.get(toCurrency);
-        double result = (double) currency.get("value");
+    public String getMonthLimit() {
+        return monthLimit;
+    }
 
+    public String getMinLimit() {
+        return minLimit;
+    }
 
+    public double getResult() {
+        return result;
+    }
 
-        System.out.println(result);
-        System.out.println(responseCode);
-        System.out.println("minute limit :" + limitQuotaMinute);
-        System.out.println("month limit :" + limitQuotaMonth);
-
-        return result * Double.parseDouble(value);
-
+    public String getApiStatus() {
+        return apiStatus;
     }
 }
