@@ -5,20 +5,32 @@ import Conversors.TempConversor;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
 
 public class BttnConversionAction implements ActionListener {
 
-    private JTextField inValue;
-    private JLabel outValue;
-    private JComboBox inComboBox;
-    private JComboBox outComboBox;
+    private final JTextField inValue;
+    private final JLabel outValue;
+    private final JComboBox inComboBox;
+    private final JComboBox outComboBox;
+    private double entryValue;
+    private final String kindOfConversion;
+    private ComboBoxKeyValue inBoxOption;
+    private ComboBoxKeyValue outBoxOption;
+    private final Map<String, Runnable> conversionMethodSet = new HashMap<>();
 
-    public BttnConversionAction(JTextField inValue, JLabel outValue, JComboBox inComboBox, JComboBox outComboBox) {
+    public BttnConversionAction(JTextField inValue, JLabel outValue, JComboBox inComboBox, JComboBox outComboBox, String kindOfConversion) {
         this.inValue = inValue;
         this.outValue = outValue;
         this.inComboBox = inComboBox;
         this.outComboBox = outComboBox;
+        this.kindOfConversion = kindOfConversion;
+
+        conversionMethodSet.put(AvaibleConversions.TEMPCONV.toString(), this::toTempConversion);
+        conversionMethodSet.put(AvaibleConversions.CURRENCYCONV.toString(), this::toCurrConversion);
     }
 
     @Override
@@ -27,20 +39,12 @@ public class BttnConversionAction implements ActionListener {
             JOptionPane.showMessageDialog(null,"No has ingresado ningún valor.","Falta valor", JOptionPane.WARNING_MESSAGE);
         } else {
             try {
-                ComboBoxKeyValue outBoxOption = (ComboBoxKeyValue) this.outComboBox.getSelectedItem();
-                ComboBoxKeyValue inBoxOption = (ComboBoxKeyValue) this.inComboBox.getSelectedItem();
+                if ( this.inComboBox.getSelectedItem() != this.outComboBox.getSelectedItem()){
 
-                if ( inBoxOption != outBoxOption){
-                    double entryValue = Double.parseDouble(inValue.getText());
-                    TempConversor convert = new TempConversor();
-                    Class<?> myClass = convert.getClass();
-                    String pair =inBoxOption.getSimbol()+"to"+outBoxOption.getSimbol();
-                    Method method = myClass.getMethod(pair, double.class);
-                    if(outBoxOption.getSimbol().equals("C") || outBoxOption.getSimbol().equals("F")){
-                        outValue.setText(String.format("%.2f", method.invoke(convert,entryValue)) + "°" + " " + outBoxOption.getSimbol());
-                    } else if (outBoxOption.getSimbol().equals("K")) {
-                        outValue.setText(String.format("%.2f", method.invoke(convert,entryValue)) + " " + outBoxOption.getSimbol());
-                    }
+                    this.entryValue = Double.parseDouble(this.inValue.getText());
+                    this.inBoxOption = (ComboBoxKeyValue) this.inComboBox.getSelectedItem();
+                    this.outBoxOption = (ComboBoxKeyValue) this.outComboBox.getSelectedItem();
+                    conversionMethodSet.get(this.kindOfConversion).run();
 
                 }else{
                     JOptionPane.showMessageDialog(null,"Las unidades de entrada y salida son las mismas.","Unidades iguales",JOptionPane.WARNING_MESSAGE);
@@ -50,6 +54,29 @@ public class BttnConversionAction implements ActionListener {
                 JOptionPane.showMessageDialog(null,"Valor ingresado no valido, solo se admiten números reales usando coma para el decimal","Valor invalido",JOptionPane.WARNING_MESSAGE);
             }
         }
+
+    }
+
+    public void toTempConversion (){
+        TempConversor convert = new TempConversor();
+        Class<?> myClass = convert.getClass();
+        String pair = inBoxOption.getSimbol() + "to" + outBoxOption.getSimbol();
+        Method method;
+        try {
+            method = myClass.getMethod(pair, double.class);
+            if(outBoxOption.getSimbol().equals("C") || outBoxOption.getSimbol().equals("F")){
+                outValue.setText(String.format("%.2f", method.invoke(convert,entryValue)) + "°" + " " + outBoxOption.getSimbol());
+            } else if (outBoxOption.getSimbol().equals("K")) {
+                outValue.setText(String.format("%.2f", method.invoke(convert,entryValue)) + " " + outBoxOption.getSimbol());
+            }
+        } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public void toCurrConversion(){
+
 
     }
     

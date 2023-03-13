@@ -26,7 +26,7 @@ public class CurrencyView {
         new InitComboBoxes(inCurrencyBox, outCurrencyBox, PathsToDataFormats.CURRENCIES);
         inCurrencyValue.addFocusListener(new InitPlaceHoldersAndFocusListeners(inCurrencyValue, outCurrencyValue));
         inCurrencyValue.addKeyListener(new DoubleOnlyKeyListener(inCurrencyValue));
-        currencyConvertBttn.addActionListener(new BttnConversionAction(inCurrencyValue, outCurrencyValue, inCurrencyBox, outCurrencyBox));
+        currencyConvertBttn.addActionListener(new BttnConversionAction(inCurrencyValue, outCurrencyValue, inCurrencyBox, outCurrencyBox, AvaibleConversions.CURRENCYCONV.toString()));
 
     }
 
