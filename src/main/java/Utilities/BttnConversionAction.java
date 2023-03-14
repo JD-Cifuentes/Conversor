@@ -15,7 +15,7 @@ import java.util.Map;
 public class BttnConversionAction implements ActionListener {
 
     private final JTextField inValue;
-    private final JLabel outValue;
+    private final JTextField outValue;
     private final JComboBox inComboBox;
     private final JComboBox outComboBox;
     private double entryValue;
@@ -24,7 +24,7 @@ public class BttnConversionAction implements ActionListener {
     private ComboBoxKeyValue outBoxOption;
     private final Map<String, Runnable> conversionMethodSet = new HashMap<>();
 
-    public BttnConversionAction(JTextField inValue, JLabel outValue, JComboBox inComboBox, JComboBox outComboBox, String kindOfConversion) {
+    public BttnConversionAction(JTextField inValue, JTextField outValue, JComboBox inComboBox, JComboBox outComboBox, String kindOfConversion) {
         this.inValue = inValue;
         this.outValue = outValue;
         this.inComboBox = inComboBox;

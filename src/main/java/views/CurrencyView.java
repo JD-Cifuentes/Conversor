@@ -9,11 +9,12 @@ public class CurrencyView {
     private JPanel CurrencyBG;
     private JPanel currencyImgPanel;
     private JButton currencyConvertBttn;
+    private JButton copyCurrencyBtton;
     private JComboBox outCurrencyBox;
     private JComboBox inCurrencyBox;
     private JTextField inCurrencyValue;
+    private JTextField outCurrencyValue;
     private JLabel toLabel;
-    private JLabel outCurrencyValue;
     private JLabel currencyTitle;
     private JLabel fromLabel;
     private JLabel currencyBannerLabel;
@@ -21,13 +22,11 @@ public class CurrencyView {
 
 
     public CurrencyView() {
-        //inCurrencyBox.setMaximumSize(new Dimension(110,26));
-        //outCurrencyBox.setMaximumSize(new Dimension(110,26));
         new InitComboBoxes(inCurrencyBox, outCurrencyBox, PathsToDataFormats.CURRENCIES);
         inCurrencyValue.addFocusListener(new InitPlaceHoldersAndFocusListeners(inCurrencyValue, outCurrencyValue));
         inCurrencyValue.addKeyListener(new DoubleOnlyKeyListener(inCurrencyValue));
         currencyConvertBttn.addActionListener(new BttnConversionAction(inCurrencyValue, outCurrencyValue, inCurrencyBox, outCurrencyBox, AvaibleConversions.CURRENCYCONV.toString()));
-
+        copyCurrencyBtton.addActionListener(new BttnCopy(outCurrencyValue));
     }
 
     public JPanel getCurrencyPanel() {

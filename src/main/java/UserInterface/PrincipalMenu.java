@@ -15,11 +15,12 @@ public class PrincipalMenu extends JFrame {
     private JPanel backgoundMain;
     private JPanel menuBanner;
     private JPanel content;
+    private JPanel imgContent;
     private JLabel aluraLabel;
     private JButton temperaturaButton;
     private JButton currencyButton;
     private JButton backButton;
-    private JPanel imgContent;
+    private JButton closeButton;
 
     WelcomeView pView = new WelcomeView(); //first panel view
     TempView tView = new TempView();
@@ -54,6 +55,16 @@ public class PrincipalMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 changeContent(pView.getWelcomePanel());
                 changeContentImg(pView.getWelcomeImgPanel());
+            }
+        });
+
+        closeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int opcion = JOptionPane.showConfirmDialog(null, "¿seguro que deseas cerrar la aplicación?","Cerrar aplicación",JOptionPane.YES_NO_OPTION);
+                if(opcion == JOptionPane.YES_OPTION){
+                    System.exit(0);
+                }
             }
         });
     }

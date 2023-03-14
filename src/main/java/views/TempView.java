@@ -5,23 +5,26 @@ import javax.swing.*;
 
 public class TempView {
     private JPanel tempBG;
-    private JTextField inTempValue;
-    private JLabel outTempValue;
     private JPanel tempPanel;
+    private JPanel tempImgPanel;
     private JButton tempConvertBttn;
-    private JLabel toLabel;
+    private JButton copyTempBttn;
     private JComboBox outTempBox;
     private JComboBox inTempBox;
+    private JTextField inTempValue;
+    private JTextField outTempValue;
+    private JLabel toLabel;
     private JLabel tempTitle;
     private JLabel fromLabel;
     private JLabel tempBannerLabel;
-    private JPanel tempImgPanel;
+
 
     public TempView() {
         new InitComboBoxes(inTempBox, outTempBox, PathsToDataFormats.TEMP);
         inTempValue.addFocusListener(new InitPlaceHoldersAndFocusListeners(inTempValue, outTempValue));
         inTempValue.addKeyListener(new DoubleOnlyKeyListener(inTempValue, "AdmitAllRealNum"));
         tempConvertBttn.addActionListener(new BttnConversionAction(inTempValue, outTempValue, inTempBox, outTempBox, AvaibleConversions.TEMPCONV.toString()));
+        copyTempBttn.addActionListener(new BttnCopy(outTempValue));
     }
 
     public JPanel getTempPanel() {

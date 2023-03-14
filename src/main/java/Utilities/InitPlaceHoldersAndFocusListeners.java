@@ -9,9 +9,9 @@ import java.util.EventListener;
 public class InitPlaceHoldersAndFocusListeners implements FocusListener {
 
     private JTextField inValue;
-    private JLabel outValue;
+    private JTextField outValue;
 
-    public InitPlaceHoldersAndFocusListeners(JTextField inValue, JLabel outValue) {
+    public InitPlaceHoldersAndFocusListeners(JTextField inValue, JTextField outValue) {
         this.inValue = inValue;
         this.outValue = outValue;
 
