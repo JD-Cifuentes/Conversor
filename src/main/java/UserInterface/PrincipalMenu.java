@@ -61,7 +61,7 @@ public class PrincipalMenu extends JFrame {
     public void changeContent(JPanel panel){
 
         panel.setSize(250,400);
-        panel.setMaximumSize(new Dimension(250,400)); // desbordamiento con currency view
+        panel.setMaximumSize(new Dimension(250,400));
         panel.setLocation(0,0);
 
         this.content.removeAll();

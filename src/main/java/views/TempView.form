@@ -17,7 +17,10 @@
       <grid id="37690" binding="tempPanel" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="true">
+            <preferred-size width="250" height="-1"/>
+            <maximum-size width="250" height="-1"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-13290187"/>
@@ -46,7 +49,7 @@
           </component>
           <component id="f73ee" class="javax.swing.JLabel" binding="outTempValue">
             <constraints>
-              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="-1" height="20"/>
                 <preferred-size width="-1" height="20"/>
                 <maximum-size width="-1" height="20"/>
@@ -60,7 +63,7 @@
               <foreground color="-1"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <labelFor value="f0464"/>
+              <labelFor value="a14e3"/>
               <opaque value="true"/>
               <text value=""/>
             </properties>
@@ -86,7 +89,7 @@
           </component>
           <component id="a14e3" class="javax.swing.JTextField" binding="inTempValue">
             <constraints>
-              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <horizontalAlignment value="0"/>
@@ -143,7 +146,10 @@
       <grid id="3f4" binding="tempImgPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="140" height="-1"/>
+            <maximum-size width="140" height="-1"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-13290187"/>
@@ -152,7 +158,10 @@
         <children>
           <component id="150ff" class="javax.swing.JLabel" binding="tempBannerLabel">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="2" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="140" height="-1"/>
+                <maximum-size width="140" height="-1"/>
+              </grid>
             </constraints>
             <properties>
               <background color="-13290187"/>

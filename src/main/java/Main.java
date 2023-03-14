@@ -29,7 +29,8 @@ public class Main {
 
         pm.setContentPane(pm.getBackgoundMain());
         pm.setTitle("Tittle");
-        pm.setSize(600, 435);
+        //pm.setSize(600, 435);
+        pm.pack();
         pm.setResizable(false);
         pm.setVisible(true);
         centreWindow(pm);
