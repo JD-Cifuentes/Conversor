@@ -13,7 +13,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BttnConversionAction implements ActionListener {
-
     private final JTextField inValue;
     private final JTextField outValue;
     private final JComboBox inComboBox;
@@ -30,7 +29,6 @@ public class BttnConversionAction implements ActionListener {
         this.inComboBox = inComboBox;
         this.outComboBox = outComboBox;
         this.kindOfConversion = kindOfConversion;
-
         conversionMethodSet.put(AvaibleConversions.TEMPCONV.toString(), this::toTempConversion);
         conversionMethodSet.put(AvaibleConversions.CURRENCYCONV.toString(), this::toCurrConversion);
     }
@@ -42,12 +40,10 @@ public class BttnConversionAction implements ActionListener {
         } else {
             try {
                 if ( this.inComboBox.getSelectedItem() != this.outComboBox.getSelectedItem()){
-
                     this.entryValue = Double.parseDouble(this.inValue.getText());
                     this.inBoxOption = (ComboBoxKeyValue) this.inComboBox.getSelectedItem();
                     this.outBoxOption = (ComboBoxKeyValue) this.outComboBox.getSelectedItem();
                     conversionMethodSet.get(this.kindOfConversion).run();
-
                 }else{
                     JOptionPane.showMessageDialog(null,"Las unidades de entrada y salida son las mismas.","Unidades iguales",JOptionPane.WARNING_MESSAGE);
                 }
@@ -74,7 +70,6 @@ public class BttnConversionAction implements ActionListener {
         } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     public void toCurrConversion(){

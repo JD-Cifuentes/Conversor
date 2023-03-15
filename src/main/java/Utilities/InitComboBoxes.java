@@ -4,16 +4,11 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.swing.*;
-import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 public class InitComboBoxes {
-
-
-    //private File tempUnits = new File("src/main/resources/DataFormat/TempFormat.json");
-
     private JComboBox inBox;
     private JComboBox outBox;
     private PathsToDataFormats PATH;
@@ -22,7 +17,6 @@ public class InitComboBoxes {
         this.inBox = inBox;
         this.outBox = outBox;
         this.PATH= PATH;
-
         ObjectMapper objectMapper = new ObjectMapper();
         File filePath = new File(PATH.getPath());
 

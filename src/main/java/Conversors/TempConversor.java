@@ -1,10 +1,4 @@
 package Conversors;
-
-import com.sun.beans.editors.DoubleEditor;
-
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.*;
 public class TempConversor {
     public double CtoF(double C){
         double F = (C * 9/5) + 32;

@@ -7,7 +7,6 @@ public enum AvaibleConversions {
     private String kindOfConv;
 
     AvaibleConversions(String kindOfConv){this.kindOfConv = kindOfConv;}
-
     @Override
     public String toString() {
         return kindOfConv;

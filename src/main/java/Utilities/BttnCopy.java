@@ -10,11 +10,9 @@ import java.awt.event.ActionListener;
 public class BttnCopy implements ActionListener {
     private final JTextField OutputToCopy;
 
-
     public BttnCopy(JTextField outputToCopy) {
         OutputToCopy = outputToCopy;
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         StringSelection outputCopied = new StringSelection(this.OutputToCopy.getText());

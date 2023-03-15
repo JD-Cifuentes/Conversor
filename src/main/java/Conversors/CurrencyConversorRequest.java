@@ -8,8 +8,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Map;
+
 public class CurrencyConversorRequest  {
-    // create a URL object with the URL you want to request
     private final String apiKey = "p9kpyvmXswKAmaBGQNAzf1zkAXwnWLrks7VHXXUU";
     private String baseCurrency;
     private String toCurrency;
@@ -23,19 +23,14 @@ public class CurrencyConversorRequest  {
         this.baseCurrency = baseCurrency;
         this.toCurrency = toCurrency;
         this.value = value;
-
         request();
-
     }
 
     public void request() throws IOException {
-
         String urlString = String.format("https://api.currencyapi.com/v3/latest?apikey=%s&value=%s&base_currency=%s&currencies=%s",
                 this.apiKey, value, baseCurrency, toCurrency);
         URL url = new URL(urlString);
-
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
-
         con.setRequestMethod("GET");
 
         int statusCode = con.getResponseCode();
@@ -65,22 +60,17 @@ public class CurrencyConversorRequest  {
             this.apiStatus = "Oops lo sentimos, al parecer tenemos algunos inconvenientes. Intenta nuevamente o ponte en contacto con nosotros si el problema persiste.";
             this.result = 0.0;
         }
-
-
     }
 
     public String getMonthLimit() {
         return monthLimit;
     }
-
     public String getMinLimit() {
         return minLimit;
     }
-
     public double getResult() {
         return result;
     }
-
     public String getApiStatus() {
         return apiStatus;
     }
