@@ -61,7 +61,7 @@ public class PrincipalMenu extends JFrame {
         closeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int opcion = JOptionPane.showConfirmDialog(null, "¿seguro que deseas cerrar la aplicación?","Cerrar aplicación",JOptionPane.YES_NO_OPTION);
+                int opcion = JOptionPane.showConfirmDialog(null, "¿Deseas cerrar la aplicación?","Cerrar aplicación",JOptionPane.YES_NO_OPTION);
                 if(opcion == JOptionPane.YES_OPTION){
                     System.exit(0);
                 }

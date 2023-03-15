@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2ee1081-ff85-4b7d-a8a3-987b17ff61a1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/CurrencyView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/CurrencyView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/views/TempView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/TempView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/CurrencyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/CurrencyView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
