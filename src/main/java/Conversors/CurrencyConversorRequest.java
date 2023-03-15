@@ -10,7 +10,7 @@ import java.net.URL;
 import java.util.Map;
 
 public class CurrencyConversorRequest  {
-    private final String apiKey = "p9kpyvmXswKAmaBGQNAzf1zkAXwnWLrks7VHXXUU";
+    private final String apiKey = "LTdyotiPSw2GuUFKvcsYjHtqGehobiSCcB5GdzLp";
     private String baseCurrency;
     private String toCurrency;
     private String value;

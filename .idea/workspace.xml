@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2ee1081-ff85-4b7d-a8a3-987b17ff61a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Conversors/CurrencyConversorRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Conversors/CurrencyConversorRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Conversors/TempConversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Conversors/TempConversor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface/PrincipalMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface/PrincipalMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/AvaibleConversions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/AvaibleConversions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BttnConversionAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BttnConversionAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BttnCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BttnCopy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ComboBoxKeyValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ComboBoxKeyValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/InitComboBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/InitComboBoxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/InitPlaceHoldersAndFocusListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/InitPlaceHoldersAndFocusListeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
