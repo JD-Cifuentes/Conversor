@@ -12,10 +12,14 @@
 
 </p>
 
+
 <br>
 
 <h3>Introducción</h3>
 <p>El conversor Alura es una aplicación que te permite conocer el equivalente de una unidad de temperatura a otra, y de igual forma, conocer el valor representativo de una divisa a otra. Además, se te permite copiar el resulado desde un prático botón.</p>
+
+<h3>Estado del proyecto</h3>
+<p_--_--_+_+_+_--_+_ </p>
 
 <h3>Sobre el Conversor de temperatura</h3>
 <p>Al ingresar el valor, seleccionar la unidad de medida de entrada y de salida, podrás conocer el valor equivalente entre las tres principales unidades de temperatura, Celsius, Kelvin y Fahrenheit, con tal solo presionar el botón "convertir"</p>
