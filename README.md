@@ -21,10 +21,10 @@
 <p>El conversor Alura es una aplicación que te permite conocer el equivalente de una unidad de temperatura a otra, y de igual forma, conocer el valor representativo de una divisa a otra. Además, se te permite copiar el resulado desde un prático botón.</p>
 
 <h3>Estado del proyecto</h3>
-<p>Se encuentra en su versión 1.1 y pausada</p>
+<p>Se encuentra en su versión 1.1 y pausada.</p>
 
 <h3>Sobre el Conversor de temperatura</h3>
-<p>Al ingresar el valor, seleccionar la unidad de medida de entrada y de salida, podrás conocer el valor equivalente entre las tres principales unidades de temperatura, Celsius, Kelvin y Fahrenheit, con tal solo presionar el botón "convertir"</p>
+<p>Al ingresar el valor, seleccionar la unidad de medida de entrada y de salida, podrás conocer el valor equivalente entre las tres principales unidades de temperatura, Celsius, Kelvin y Fahrenheit, con tal solo presionar el botón "convertir".</p>
 
 <h3>Sobre el Conversor de divisas</h3>
 <p>Su principio es el mismo que el del conversor de temperatura, solo que aquí no se tratara con unidades de medida preestablecidas; ya que las divisas dependen de la situación económica, social y política, es decir es un panorama totalmente dinámico, por ello, en esta aplicación donde podrás contar con más de 170 divisas, no solo con monedas centralizadas, también están incluidas algunas criptomonedas como Cardano y Bitcoin, y a su vez, indices para el oro y la plata.</p>
@@ -40,7 +40,7 @@
 </ul>
 
 <h3>Acceso al proyecto</h3>
-[![Vídeo conversor](https://img.youtube.com/vi/zs8b0RlaSXM/0.jpg)](https://www.youtube.com/watch?v=zs8b0RlaSXM)
+[![Vídeo tutorial conversor] (https://img.youtube.com/vi/zs8b0RlaSXM/0.jpg)] (https://www.youtube.com/watch?v=zs8b0RlaSXM)
 
 <h3>Autor</h3>
 <img src="https://avatars.githubusercontent.com/u/53058604?v=4" width=115>
