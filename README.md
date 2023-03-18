@@ -1,5 +1,5 @@
 <h1 align = "center">
-![Conversor Alura]
+<img src=https://pasteboard.co/uSZzFq85HEqv.png>
 </h1>
 <h2>Oracle Next Education - Alura Challenge #2</h2>
 
@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/jackson-2.14.2-blue">
 <img src="https://img.shields.io/badge/flatlaf-3.0-blue">
 <img src="https://img.shields.io/badge/java-8-blue">
-<img src="https://img.shields.io/badge/version-1.0-brightgreen">
+<img src="https://img.shields.io/badge/maven-3.9-blue">
 <img src="https://img.shields.io/badge/version-1.0-brightgreen">
 
 </p>
