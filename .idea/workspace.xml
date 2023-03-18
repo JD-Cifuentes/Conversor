@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2ee1081-ff85-4b7d-a8a3-987b17ff61a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Conversor/Conversors/CurrencyConversorRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Conversor/Conversors/CurrencyConversorRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Conversor/Utilities/BttnConversionAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Conversor/Utilities/BttnConversionAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Conversor/views/CurrencyView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Conversor/views/CurrencyView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Conversor/views/CurrencyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Conversor/views/CurrencyView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Challenge2conversor-1.0-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Challenge2conversor-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Conversor/Conversors/CurrencyConversorRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Conversor/Conversors/CurrencyConversorRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Conversor/Utilities/BttnConversionAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Conversor/Utilities/BttnConversionAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Conversor/views/CurrencyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Conversor/views/CurrencyView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
