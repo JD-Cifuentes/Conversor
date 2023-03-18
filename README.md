@@ -31,9 +31,6 @@
  
 <p>todo esto es posible, gracias a la API de Currencyapi (https://currencyapi.com/) que permite en su versión gratuita realizar 300 consultas en un mes, solo debes de crear una cuenta en su sitio, luego copiar y pegar la apikey que se genera para tu perfil y listo, podrás acceder a su servicio gratuito desde esta aplicación. Se a agregado una apikey por defecto para aquellos que solo deseen probar sin crear una cuenta en el sitio.</p>
 
-<h3>Acceso al proyecto</h3>
-[![Vídeo conversor](https://img.youtube.com/vi/zs8b0RlaSXM/0.jpg)](https://www.youtube.com/watch?v=zs8b0RlaSXM)
-
 <h3>Tecnologías implementadas</h3>
 <ul>
  <li>Java 8</li>
@@ -42,6 +39,8 @@
  <li>Jackson 2.14.2</li>
 </ul>
 
+<h3>Acceso al proyecto</h3>
+[![Vídeo conversor](https://img.youtube.com/vi/zs8b0RlaSXM/0.jpg)](https://www.youtube.com/watch?v=zs8b0RlaSXM)
 
 <h3>Autor</h3>
 <img src="https://avatars.githubusercontent.com/u/53058604?v=4" width=115>
