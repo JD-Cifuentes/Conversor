@@ -1,5 +1,5 @@
 <h1 align = "center">
-![Conversor Alura](https://pasteboard.co/HIEJYsH19ms4.png)
+<img src=https://pasteboard.co/uSZzFq85HEqv.png>
 </h1>
 <h2>Oracle Next Education - Alura Challenge #2</h2>
 
