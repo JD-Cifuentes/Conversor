@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2ee1081-ff85-4b7d-a8a3-987b17ff61a1" name="Changes" comment="" />
+    <list default="true" id="f2ee1081-ff85-4b7d-a8a3-987b17ff61a1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Conversor/Conversors/CurrencyConversorRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Conversor/Conversors/CurrencyConversorRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Conversor/Utilities/BttnConversionAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Conversor/Utilities/BttnConversionAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Conversor/views/CurrencyView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Conversor/views/CurrencyView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Conversor/views/CurrencyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Conversor/views/CurrencyView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Challenge2conversor-1.0-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Challenge2conversor-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Conversor/Conversors/CurrencyConversorRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Conversor/Conversors/CurrencyConversorRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Conversor/Utilities/BttnConversionAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Conversor/Utilities/BttnConversionAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Conversor/views/CurrencyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Conversor/views/CurrencyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,24 +45,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE": "right",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "1",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "247",
-    "last_opened_file_path": "C:/Users/juan-/OneDrive/ONE/Segunda etapa java/Challenge #2 conversor",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE&quot;: &quot;right&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;1&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE&quot;: &quot;left&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;247&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/juan-/OneDrive/ONE/Segunda etapa java/Challenge #2 conversor&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Utilities" />

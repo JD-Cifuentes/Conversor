@@ -4,8 +4,6 @@
 
 <p>
 <img src="https://img.shields.io/badge/jackson-2.14.2-blue">
-</p>
-<p>
 <img src="https://img.shields.io/badge/flatlaf-3.0-blue">
 </p>
 

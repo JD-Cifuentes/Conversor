@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>groupId</groupId>
+    <groupId>com.conversor</groupId>
     <artifactId>Challenge2conversor</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <build>
@@ -38,6 +38,13 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub JD-Cifuentes Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/JD-Cifuentes/Conversor</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -63,5 +70,7 @@
             <version>3.0</version>
         </dependency>
     </dependencies>
+
+
     
 </project>

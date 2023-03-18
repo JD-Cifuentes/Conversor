@@ -1,5 +1,6 @@
 package com.Conversor.Conversors;
 
+import com.Conversor.views.CurrencyView;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.BufferedReader;
@@ -10,7 +11,7 @@ import java.net.URL;
 import java.util.Map;
 
 public class CurrencyConversorRequest  {
-    private final String apiKey = "LTdyotiPSw2GuUFKvcsYjHtqGehobiSCcB5GdzLp";
+    private static String apiKey = "LTdyotiPSw2GuUFKvcsYjHtqGehobiSCcB5GdzLp";
     private String baseCurrency;
     private String toCurrency;
     private String value;
@@ -19,6 +20,9 @@ public class CurrencyConversorRequest  {
     private double result;
     private String apiStatus;
 
+    public CurrencyConversorRequest(){
+
+    }
     public CurrencyConversorRequest(String baseCurrency, String toCurrency, String value) throws IOException {
         this.baseCurrency = baseCurrency;
         this.toCurrency = toCurrency;
@@ -73,5 +77,8 @@ public class CurrencyConversorRequest  {
     }
     public String getApiStatus() {
         return apiStatus;
+    }
+    public void setApiKey(String apiKey){
+        this.apiKey = apiKey;
     }
 }

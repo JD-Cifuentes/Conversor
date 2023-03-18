@@ -81,7 +81,7 @@ public class BttnConversionAction implements ActionListener {
             if (currOut.getApiStatus() != "Ejecución exitosa"){
                 JOptionPane.showMessageDialog(null,currOut.getApiStatus(),"Oops ocurrió algo inesperado",JOptionPane.ERROR_MESSAGE);
             }else{
-                JOptionPane.showMessageDialog(null,"consultas que puedes hacer por minuto: " + currOut.getMinLimit() + ". Consultas disponibles de este mes:" + currOut.getMonthLimit(),"Consultas restantes",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,"consultas que puedes hacer por minuto: " + currOut.getMinLimit() + ". Consultas disponibles de este mes: " + currOut.getMonthLimit(),"Consultas restantes",JOptionPane.INFORMATION_MESSAGE);
             }
         } catch (IOException e) {
             System.out.println(e + " at BttnConversionAction - toCurrentConversion");
