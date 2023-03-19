@@ -9,6 +9,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class PrincipalMenu extends JFrame {
     private JPanel backgoundMain;
@@ -20,14 +23,14 @@ public class PrincipalMenu extends JFrame {
     private JButton currencyButton;
     private JButton backButton;
     private JButton closeButton;
+    private JButton linkedinBttn;
+    private JButton guthubBttn;
 
     WelcomeView wView = new WelcomeView();
     TempView tView = new TempView();
     CurrencyView cView = new CurrencyView();
 
     public PrincipalMenu() {
-
-        try{
             changeContent(this.wView.getWelcomePanel());
             changeContentImg(this.wView.getWelcomeImgPanel());
             temperaturaButton.addActionListener(new ActionListener() {
@@ -54,16 +57,33 @@ public class PrincipalMenu extends JFrame {
             closeButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    int opcion = JOptionPane.showConfirmDialog(null, "¿Deseas cerrar la aplicación?","Cerrar aplicación",JOptionPane.YES_NO_OPTION);
-                    if(opcion == JOptionPane.YES_OPTION){
+                    int option = JOptionPane.showConfirmDialog(null, "¿Deseas cerrar la aplicación?","Cerrar aplicación",JOptionPane.YES_NO_OPTION);
+                    if(option == JOptionPane.YES_OPTION){
                         System.exit(0);
                     }
                 }
             });
-        }catch (NullPointerException | HeadlessException e){
-            System.out.println(e + " at PrincipalMenu");
-        }
 
+        linkedinBttn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    Desktop.getDesktop().browse(new URI("https://www.linkedin.com/in/juandavidcifuentesflorez/"));
+                }catch (IOException | URISyntaxException ex){
+                    System.out.println(ex);
+                }
+            }
+        });
+        guthubBttn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    Desktop.getDesktop().browse(new URI("https://github.com/JD-Cifuentes"));
+                }catch (IOException | URISyntaxException ex){
+                    System.out.println(ex);
+                }
+            }
+        });
     }
 
     public void changeContent(JPanel panel){
