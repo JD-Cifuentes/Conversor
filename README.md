@@ -40,7 +40,7 @@
 </ul>
 
 <h3>Acceso al proyecto</h3>
-[![Vídeo tutorial conversor] (https://img.youtube.com/vi/zs8b0RlaSXM/0.jpg)] (https://www.youtube.com/watch?v=zs8b0RlaSXM)
+[![Vídeo tutorial conversor] (https://img.youtube.com/vi/Lns6MhptGpg/0.jpg)] (https://www.youtube.com/watch?v=Lns6MhptGpg)
 
 <h3>Autor</h3>
 <img src="https://avatars.githubusercontent.com/u/53058604?v=4" width=115>
