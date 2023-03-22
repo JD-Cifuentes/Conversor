@@ -40,6 +40,10 @@
 </ul>
 
 <h3>Acceso al proyecto</h3>
+
+![Tutorial conversor Alura](https://user-images.githubusercontent.com/53058604/227001398-c9b9d8ca-62c1-4147-ae6c-de875984b09e.gif)
+
+
 [![Vídeo tutorial conversor] (https://img.youtube.com/vi/Lns6MhptGpg/0.jpg)] (https://www.youtube.com/watch?v=Lns6MhptGpg)
 
 <h3>Autor</h3>
