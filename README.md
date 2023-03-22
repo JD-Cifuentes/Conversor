@@ -41,8 +41,8 @@
 
 <h3>Acceso al proyecto</h3>
 
-![Tutorial conversor Alura](src\main\resources\Tutorial conversor Alura.gif)
 
+![Tutorial_conversor_Alura](https://user-images.githubusercontent.com/53058604/227003325-85a6ea7f-911c-4fa1-b5e3-83198467353a.gif)
 
 [![Vídeo tutorial conversor] (https://img.youtube.com/vi/Lns6MhptGpg/0.jpg)] (https://www.youtube.com/watch?v=Lns6MhptGpg)
 
